@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		form{
+			width: 50%;
+			margin: auto;
+			
+
+		}
+		h1{
+			font-family: sans-serif;
+			text-align: center;
+			color: blueviolet;
+			 animation-name: mymove;
+			 position: relative;
+           animation-duration: 5s;
+            animation-timing-function: linear;
+           animation-iteration-count: infinite;
+		}
+		input[type="text"]{
+			padding: 10px;
+			width: 80%;
+			border: none;
+			color: whitesmoke;
+			font-size: 20px;
+			border-radius: 20px;
+			background-image: linear-gradient(to right top, #1c8a03, #1d9806, #1ca70b, #1bb611, #17c516);
+		}
+		input[type="submit"]{
+			padding: 10px;
+			border: none;
+			color: whitesmoke;
+			font-size: 20px;
+			border-radius: 20px;
+			background-image: linear-gradient(to right top, #1c8a03, #1d9806, #1ca70b, #1bb611, #17c516);
+		}
+		@keyframes mymove{
+			from{
+				left: 0px;
+			}
+			to{
+            left: -100px;
+			}
+		}
+	</style>
+</head>
+<body>
+  <form>
+  	<h1>DOM on-event handler</h1>
+  	<input type="text" name="txt" id="input" placeholder="Enter.." />
+  	<input type="submit" name="" id="btn">
+  </form>
+  <script src="./index.js"></script>
+</body>
+</html>
